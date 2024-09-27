@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tech Skills Vocational Institute</h1>
+        <h2>1st Test of Artificial Intelligence Class</h2>
+        <p id="studentInfo"></p>
+    </div>
+
+    <script>
+        // Function to extract URL parameters
+        function getQueryParams() {
+            const params = {};
+            const queryString = window.location.search.slice(1);
+            const pairs = queryString.split('&');
+            pairs.forEach(pair => {
+                const [key, value] = pair.split('=');
+                params[decodeURIComponent(key)] = decodeURIComponent(value);
+            });
+            return params;
+        }
+
+        // Get student name and marks from URL and display
+        const params = getQueryParams();
+        const studentName = params.name || "Not Provided";
+        const marks = params.marks || "0";
+
+        document.getElementById('studentInfo').innerText = `Student Name: ${studentName}, Total Marks: ${marks}/50`;
+    </script>
+</body>
+</html>

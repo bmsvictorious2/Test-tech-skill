@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tech Skill Vocational Institute</h1>
+        <h1>Test No 1</h1>
+        <div class="name-section">
+            <label for="studentName">Enter your name:</label>
+            <input type="text" id="studentName" placeholder="Your Name">
+        </div>
+
+        <!-- Display Student's Name -->
+        <p id="displayName"></p>
+
+        <!-- Question 1 (Yes/No using checkboxes) -->
+        <div class="question">
+            <p>1. AI stands for?</p>
+            <input type="checkbox" id="artificialIntelligence" value="Artificial intelligence">
+            <label for="artificialIntelligence">Artificial intelligence</label>
+            
+            <input type="checkbox" id="articalIntelligent" value="Artical Intelligent">
+            <label for="articalIntelligent">Artical Intelligent</label>
+        </div>
+        
+        <!-- Question 2 (Dropdown) -->
+        <div class="question">
+            <p>2.AI used in----Fields?</p>
+            <select id="question2">
+                <option value="">--Select an answer--</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Medical">Medical</option>
+                <option value="Weather forecast">Weather forecast</option>
+                <option value="Both a,b & c">Both a,b & c</option>
+            </select>
+        </div>
+          <!-- Question 3 (Dropdown) -->
+        <!-- Question 1 (Multiple Choice) -->
+<div class="question">
+    <p>3. Select Workload of AI?</p>
+    <input type="radio" id="computerVision" name="workloadAI" value="Computer Vision">
+    <label for="computerVision">Computer Vision</label>
+    
+    <input type="radio" id="machineLearning" name="workloadAI" value="Machine Learning">
+    <label for="machineLearning">Machine Learning</label>
+    
+    <input type="radio" id="regression" name="workloadAI" value="Regression">
+    <label for="regression">Regression</label>
+</div>
+
+ <!-- Question 4 (Checkboxes) -->
+
+ <div class="question">
+    <p>4. We can Train Machine Learning Model by using----: </p>
+    <input type="radio" id="label" name="train" value="label">
+    <label for="label">Label</label>
+    
+    <input type="radio" id="feature" name="train" value="feature">
+    <label for="feature">Featutre</label>
+    
+    <input type="radio" id="dataset" name="train" value="dataset">
+    <label for="dataset">Dataset</label>
+</div>
+
+<div class="question">
+    <p>5. Which	type	of	machine	learning	should	you	use	to	predict	the	number	of	gift	cards	that	will	be	sold	next	month?
+        ?</p>
+    <select id="question5">
+        <option value="">--Select an answer--</option>
+        <option value="Regression">Regression</option>
+        <option value="Binary Classification">Binary Classification</option>
+        
+        <option value="Both a,b & c">Both a & b</option>
+    </select>
+</div>
+<div class="question">
+    <p>6. Select the two type of Machine Learning?</p>
+    <input type="checkbox" id="typeRegression" value="Regression">
+    <label for="typeRegression">Regression</label>
+    
+    <input type="checkbox" id="typesupervisedlearning" value="Supervised Learning">
+    <label for="typesupervisedlearning">Supervised Learning</label>
+    
+    <input type="checkbox" id="typeunsupervisedlearning" value="Unsupervised Learning">
+    <label for="typeunsupervisedlearning">UnSupervised Learning</label>
+    
+    
+</div>
+
+<div class="question">
+    <p>7. You	plan	to	use	the	dataset	to	train	a	model	that	will	predict	the	house	price	categories	of	houses.The House Price is a feature or Label?</p>
+    <select id="question7">
+        <option value="">--Select an answer--</option>
+        <option value="feature">Feature</option>
+        
+        <option value="label">Label</option>
+    </select>
+</div>
+<div class="question">
+    <p>8. You	plan	to	use	the	dataset	to	train	a	model	that	will	predict	the	house	price	categories	of	houses. What	are
+        	Household	Income	and	House	Price	Category.The House Price is a feature or Label?</p>
+    <select id="question8">
+        <option value="">--Select an answer--</option>
+        <option value="feature">Feature</option>
+        
+        <option value="label">Label</option>
+    </select>
+</div>
+<div class="question">
+    <p>9. AI is a machine that mimic---? </p>
+    <input type="radio" id="artificiallife" name="AI" value="artificiallife">
+    <label for="artificiallife">Artificial Life</label>
+    
+    <input type="radio" id="human" name="AI" value="human">
+    <label for="human">Human Behaviour</label>
+    
+    
+</div>
+<div class="question"></div>
+    <p>10. Which AI tool used to generate images? </p>
+    <input type="radio" id="stylar" name="images" value="stylar">
+    <label for="stylar">Stylar.ai</label>
+    
+    <input type="radio" id="Elevenlabs" name="images" value="Elvenlabs">
+    <label for="Elevenlabs">Elevenlabs</label>
+    
+    
+</div>
+
+
+        
+        <button onclick="checkAnswers()">submit</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
